@@ -22,9 +22,9 @@ When clicking "User settings" which is opening /user/edit (in another menu), the
 For example:
 
 1. Click on Home, click on User settings -> Home active class still visible.
-2. Click on Home, click on User settings -> Home active class still gone.
+2. Click on Home, click on User settings -> Home active class is gone.
 3. Click on Home, click on User settings -> Home active class still visible.
-4. Click on Home, click on User settings -> Home active class still gone.
+4. Click on Home, click on User settings -> Home active class is gone.
 
 Expected behavior:
 
