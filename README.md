@@ -12,16 +12,20 @@ yarn install
 Start the development server on http://localhost:3000
 
 ```bash
-npx nuxt dev
+yarn dev
 ```
 
-## Error
+## Issue
 
-Updating Nuxt 3.0.0 to 3.1.2 is causing error in the project:
+When clicking "User settings" which is opening /user/edit (in another menu), the active main menu class is not disappearing.
 
-```bash
-✘ [ERROR] No loader is configured for ".node" files: node_modules/fsevents/fsevents.node
+For example:
 
-    node_modules/fsevents/fsevents.js:13:23:
-      13 │ const Native = require("./fsevents.node");
-```
+1. Click on Home, click on User settings -> Home active class still visible.
+2. Click on Home, click on User settings -> Home active class still gone.
+3. Click on Home, click on User settings -> Home active class still visible.
+4. Click on Home, click on User settings -> Home active class still gone.
+
+Expected behavior:
+
+When clicking on a menu item in another menu, the active class of the current item should always be gone (unless both items have the same URL path).
