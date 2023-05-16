@@ -28,7 +28,6 @@ const items = reactive([
           <v-list-item
             v-for="(item, index) in items"
             :key="index"
-            :value="index"
             :to="item.to"
             router
             exact

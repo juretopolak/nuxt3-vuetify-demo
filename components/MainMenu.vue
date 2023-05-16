@@ -25,7 +25,6 @@ const mainMenu = reactive([
     <v-list-item
       v-for="(item, i) in mainMenu"
       :key="i"
-      :value="item"
       :to="item.to"
       rounded="xl"
       router
